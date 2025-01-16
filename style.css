@@ -459,4 +459,52 @@ h3, .project-title {
     letter-spacing: 0.5px;
 }
 
+/* Ana sayfa için ek stiller */
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 2rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+nav a.active {
+    border-bottom: 2px solid #007bff;
+}
+
+.home-content {
+    margin-top: 3rem;
+}
+
+.visitor-counter {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
 
