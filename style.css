@@ -1,0 +1,462 @@
+/* Genel font ayarları */
+body {
+    font-family: 'Open Sans', 'Segoe UI', Roboto, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+/* A4 formatı için container */
+.container {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    display: flex;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Content */
+.content {
+    width: 120mm;
+    height: 297mm;
+    padding: 5mm 12mm 20mm 0;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+/* Uzun metinler için word-wrap */
+.content p, 
+.content li,
+.tech-stack {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Başlıklar */
+h1 {
+    font-size: 30px;
+    margin-bottom: 2mm;
+    text-align: center;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* İlk başlık için özel stil */
+.content h2:first-child {
+    margin-top: 0;
+}
+
+/* Başlık çizgilerinin rengi ve kalınlığı */
+.content h2 {
+    border-bottom: 2px solid #3498db;
+}
+
+.sidebar h2 {
+    border-bottom: 2px solid #3498db;
+}
+
+/* Başlıklar arası boşluk */
+section {
+    margin-bottom: 20px;
+}
+
+/* Profil resmi */
+.profile-img {
+    width: 150px;  /* Genişliği artırdık */
+    height: 150px; /* Yüksekliği artırdık */
+    border-radius: 50%;  /* Yuvarlak görünüm için */
+    object-fit: cover;   /* Fotoğrafın oranını koruyarak doldurur */
+    object-position: center 20%;  /* Yüzü ortalamak için dikey pozisyonu ayarlar */
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+/* Fähigkeiten */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 6px;
+}
+
+.skills-list span {
+    padding: 6px 6px;
+    
+    border-radius: 3px;
+    font-size: 12px;
+    color: #2c3e50;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    color: #444;
+}
+
+
+
+/* Son elemandan sonra nokta olmasın */
+.skills-list span:last-child::after {
+    display: none;
+}
+
+/* Kontakt */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0;
+}
+
+.contact-list li {
+    margin-bottom: 6px;
+}
+
+.contact-list a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* İş deneyimi */
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3498db;
+    font-size: 15px;
+    margin: 3px 0;
+}
+
+.company span {
+    color: #666;
+    font-size: 13px;
+}
+
+.company .date {
+    margin-right: 10px;
+}
+
+.date {
+    color: #666;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* Listeler */
+.content ul {
+    margin: 1.5mm 0;
+    padding-left: 4mm;
+}
+
+.content li {
+    margin-bottom: 1.2mm;
+    padding-right: 2mm;
+}
+
+/* Teknoloji stack */
+.tech-stack {
+    font-style: italic;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Eğitim bölümü */
+.education-item {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.education-title {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.title {
+    text-align: center;  /* Metni ortalar */
+    width: 100%;        /* Tam genişlik */
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/* İş deneyimi bölümleri */
+.job-section {
+    margin-bottom: 3mm;
+}
+
+/* Print media query */
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    
+    body {
+        padding: 0;
+        background: white;
+    }
+    
+    .container {
+        box-shadow: none;
+    }
+}
+
+/* Dil listesi için özel stil */
+.languages-list {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.languages-list li {
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+
+/* İş başlıkları */
+.job-title {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Şirket adı */
+.company {
+    color: #3498db;
+    font-weight: 500;
+}
+
+/* Tarihler */
+.date {
+    color: #666;
+    font-weight: 400;
+}
+
+/* Linkler */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Liste maddeleri */
+.content ul li {
+    margin-bottom: 4px;
+    line-height: 1.4;
+    color: #444;
+}
+
+/* Teknoloji stack */
+.tech-stack {
+    font-style: italic;
+    
+    font-weight: 400;
+}
+
+/* Skills listesi */
+.skills-list span {
+    font-weight: 400;
+    color: #444;
+}
+
+/* Proje başlıkları */
+.project-title {
+    font-size: 11px;
+    margin-bottom: 2mm;
+}
+
+/* Teknoloji stack'leri */
+.tech-stack {
+    font-size: 10px;
+    
+    
+    line-height: 1.2;
+}
+
+/* Tarih ve lokasyon */
+.date, .location {
+    font-size: 12px;
+    white-space: nowrap;
+    float: right; 
+    gap: 5px;
+    display: flex;
+    color: #666;
+
+}
+
+/* Profil resmi container */
+.profile-container {
+    margin-bottom: 10mm;
+}
+
+/* İş başlıkları ve şirket satırları için ortak stil */
+.company, h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Şirket ismi için stil */
+.company {
+    color: #3498db;
+    font-weight: normal;
+}
+
+/* Meta bilgileri için konteyner */
+.meta-info {
+    display: flex;
+    gap: 10px;
+    color: #666;
+    font-size: 13px;
+}
+
+/* İş başlıkları için normal renk */
+h4 {
+    color: #333;
+    font-weight: normal;
+}
+
+/* Tarih ve lokasyon için stil */
+.company span {
+    color: #666;
+    font-size: 12px;
+}
+
+.company .date {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+/* İş başlıkları için stil */
+h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Şirket satırı için stil */
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    color: #3498db;
+    font-weight: normal;
+}
+
+/* Meta bilgileri için konteyner */
+.meta-info {
+    display: flex;
+    gap: 10px;
+    color: #666;
+    font-size: 12px;
+}
+
+/* Liste maddeleri için stil */
+li {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Tüm metin elementleri için ortak stil */
+h4, .company, .meta-info, li, p, span, ul {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* İş başlıkları için stil */
+h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+/* Şirket satırı için stil */
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    color: #3498db;
+}
+
+/* Meta bilgileri için konteyner */
+.meta-info {
+    display: flex;
+    gap: 10px;
+    color: #666;
+}
+
+/* Liste maddeleri için stil */
+li {
+    margin-bottom: 4px;
+}
+
+/* Proje ve Ausbildung başlıkları için stil */
+h3, .project-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+
