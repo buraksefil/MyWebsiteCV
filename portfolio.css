@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Main content area */
+main {
+    width: 100%;
+}
+
+/* Section styles */
+.projects-section,
+.certificates-section {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Section headers */
+.projects-section h2,
+.certificates-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* Project and Certificate items */
+.project,
+.certificate {
+    width: 100%;
+    margin-bottom: 1rem;
+    
+    border-bottom: 1px solid #eee;
+}
+
+.project:last-child,
+.certificate:last-child {
+    border-bottom: none;
+}
+
+/* Project specific styles */
+.project h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.project p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Certificate specific styles */
+.certificate h3 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.certificate p {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.cert-date {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+}
