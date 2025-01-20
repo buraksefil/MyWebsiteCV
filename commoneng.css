@@ -1,0 +1,11 @@
+.language-selector a {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    
+}
+
+.language-selector a.active {
+    opacity: 1;
+    background: none;
+    color: var(--primary-color);
+}
