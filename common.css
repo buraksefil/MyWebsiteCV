@@ -56,7 +56,7 @@ nav {
 .container {
     max-width: 1200px;  /* Maksimum genişlik */
     margin: 0 auto;  /* Ortalamak için */
-    padding: 2rem;  /* İç boşluk */
+    padding: 0 auto;  /* İç boşluk */
     display: flex;  /* Flexbox kullanarak içeriği hizala */
     flex-direction: column;  /* Dikey hizalama */
 }
@@ -86,7 +86,6 @@ nav {
 
 footer {
     background-color: #f8f9fa;  /* Açık arka plan rengi */
-    padding: 1rem;
     text-align: center;
     position: relative;
     bottom: 0;
