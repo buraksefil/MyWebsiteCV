@@ -201,7 +201,6 @@ section {
 .title {
     text-align: center;  /* Metni ortalar */
     width: 100%;        /* Tam genişlik */
-    margin: 5px 0;
     font-size: 15px;
 }
 

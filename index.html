@@ -47,7 +47,37 @@
             -->
         </main>
     </div>
+    <footer>
+        <div class="footer-content">
+            <p id="total-visitor-count">Total Page Views: 0</p>
+            <p id="daily-visitor-count">Daily Page Views: 0</p>
+            <p style="font-size: 9pt;">This website is built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
 
     <script src="home.js"></script>
+    <script>
+        // Toplam ziyaretçi sayısını yerel depolamada sakla
+        let totalVisitorCount = localStorage.getItem('totalVisitorCount') || 0;
+        totalVisitorCount++;
+        localStorage.setItem('totalVisitorCount', totalVisitorCount);
+        document.getElementById('total-visitor-count').innerText = 'Total Page Views: ' + totalVisitorCount;
+
+        // Günlük ziyaretçi sayısını yerel depolamada sakla
+        let dailyVisitorCount = localStorage.getItem('dailyVisitorCount') || 0;
+        const today = new Date().toDateString();
+        const lastVisitDate = localStorage.getItem('lastVisitDate');
+
+        if (lastVisitDate !== today) {
+            dailyVisitorCount = 1;  // Yeni gün
+        } else {
+            dailyVisitorCount++;  // Aynı gün
+        }
+
+        localStorage.setItem('dailyVisitorCount', dailyVisitorCount);
+        localStorage.setItem('lastVisitDate', today);
+        document.getElementById('daily-visitor-count').innerText = 'Daily Page Views: ' + dailyVisitorCount;
+    </script>
+    
 </body>
 </html> 

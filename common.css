@@ -80,4 +80,25 @@ nav {
     .container {
         padding: 1rem;
     }
+}
+
+footer {
+    background-color: #f8f9fa;  /* Açık arka plan rengi */
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;  /* Üst çizgi */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;  /* Yazı rengi */
+}
+
+#total-visitor-count,
+#daily-visitor-count {
+    font-weight: bold;  /* Kalın yazı */
 } 
