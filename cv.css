@@ -201,6 +201,7 @@ section {
 .title {
     text-align: center;  /* Metni ortalar */
     width: 100%;        /* Tam genişlik */
+    margin-bottom: 10px;
     font-size: 15px;
 }
 
@@ -229,13 +230,17 @@ section {
         box-shadow: none;
         width: 100%;
         max-width: 100%;
-        margin: 0 auto;
-        padding: 20mm;  /* Sayfa kenarlarından boşluk */
+        margin: 0;
+        padding: 0;  /* Sayfa kenarlarından boşluk */
+    }
+    header, main, footer {
+        display: block;  /* Tüm bölümler blok olarak gösterilsin */
+        width: 100%;  /* Tam genişlik */
     }
 
     /* Header ve başlıklar için yazı boyutları */
     h1 {
-        font-size: 18pt;  /* Başlık boyutu */
+        font-size: 30pt;  /* Başlık boyutu */
     }
 
     h2 {
@@ -248,6 +253,7 @@ section {
 
     p, li, td, th {
         font-size: 12pt;  /* Normal metin boyutu */
+        margin: 0;
     }
 
     /* Gereksiz elementleri gizle */
@@ -282,7 +288,10 @@ section {
         padding: 0;
         width: 100%;
     }
-
+    .title {
+        margin-bottom: 70px;  /* Altına 70px boşluk ekle */
+    }
+    
     .container {
         width: 100%;
         max-width: 100%;
